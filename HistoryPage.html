@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Partner - Search</title>
+    <link rel="stylesheet" href="HistoryPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="header">
+        <a  style="text-decoration:none; color: black;" href="index.html">Math Partner</a>
+      </h1>
+      <a class="searchA" href="index.html" style="text-decoration:none; color: white;">
+        <button class="newSearch">NEW SEARCH</button>
+      </a>
+    </nav>
+    <div class="displayDetails" id="tableContainer">
+        <table class="content-table" id="tableContent">
+            <thead>
+              <tr>
+                <th id="srNoCol">Sr.No</th>
+                <th id="probCol">Problem</th>
+                <th id="catCol">Category</th>
+                <th id="resCol">Result</th>
+                <th id="delCol">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">                
+            </tbody>
+        </table>
+    </div> 
+    <script src="./App.js"></script>
+
+  </body>
+</html>

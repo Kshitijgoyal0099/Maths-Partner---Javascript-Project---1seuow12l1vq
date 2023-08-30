@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'poppins','comic neue','Nunito';
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 90vw;
+    padding: 10px;
+}
+
+.header{
+    font-size: 40px;
+    color: black;
+    font-style: bold;
+}
+
+.searchA{
+    height: 100%;
+    width: auto;
+}
+.newSearch{
+    border-radius: 10px;
+    width: auto;
+    height: 90%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.newSearch:hover{
+    transition: ease-in-out .5s;
+    transform: scale(1.05);
+}
+
+.displayDetails{
+    width: 90vw;
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
+
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 90vw;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+.content-table thead tr{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 2px solid lightgray;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: lightgrey;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}
+
+.content-table tbody tr:hover{
+    transition: ease-in-out .5s;
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}

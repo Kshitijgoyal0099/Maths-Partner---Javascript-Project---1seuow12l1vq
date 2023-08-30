@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Partner - Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <nav class="nav">
+      <h1 class="header">
+        <a  style="text-decoration:none; color: black;" href="index.html">Math Partner</a>
+      </h1>
+      <a class="historyA" href="HistoryPage.html" style="text-decoration:none; color: white;">
+        <button class="history">SAVED SOLUTIONS</button>
+      </a>
+    </nav>
+    <div class="main">
+        <span class="question">
+            <div id="Label">Problem:</div>
+            <input type="text" class="Problem" id="problemID" placeholder="Type Here ..." />
+        </span>
+        <span class="CatSpan">
+            <div id="Label">Select Category:</div>       
+            <select name="Category" class="category" id="category">
+                <option value="simplify">Simplify</option>
+                <option value="factor">Factor</option>
+                <option value="derive">Derivate</option>
+                <option value="integrate">Integrate</option>
+                <option value="zeroes">Find 0's</option>
+                <option value="tangent">Tangent</option>
+                <option value="area">Area Under Curve</option>
+                <option value="cos">Cosine</option>
+                <option value="sin">Sine</option>
+                <option value="tan">Tangent</option>
+                <option value="arccos">Inverse Cosine</option>
+                <option value="arcsin">Inverse Sine</option>
+                <option value="arctan">Inverse Tangent</option>
+                <option value="abs">Absolute Value</option>
+                <option value="log">Logarithm</option>
+            </select>
+        </span>
+        <div class="search" id="searchResult" ><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    <div class="result-container">
+        <div class="result" id="resultDisplay"></div>
+        <button class="clearScreen" id="clearBtn"><i class="fa-solid fa-trash"></i></button>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>

@@ -50,7 +50,7 @@ function updateSolutions(ope,exp,res){
         "expression":exp,
         "result":res
     };
-    debugger
+    // debugger
     let existingSolutions = JSON.parse(window.localStorage.getItem("solutions"));
     if(existingSolutions){
       existingSolutions.push(tempSol);

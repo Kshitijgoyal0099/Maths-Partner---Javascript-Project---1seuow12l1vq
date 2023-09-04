@@ -6,6 +6,11 @@ let clearBtn = document.getElementById("clearBtn");
 
 let existingSolutions = JSON.parse(window.localStorage.getItem("solutions"));
 
+
+// if(!existingSolutions && !Array.isArray(existingSolutions)){
+//   existingSolutions = [];
+// }
+
 document.addEventListener("DOMContentLoaded", function() {
     var getValueButton = document.getElementById("searchResult");
     getValueButton.addEventListener("click", getInputValue);  
@@ -45,11 +50,13 @@ function updateSolutions(ope,exp,res){
         "expression":exp,
         "result":res
     };
+    debugger
+    let existingSolutions = JSON.parse(window.localStorage.getItem("solutions"));
     if(existingSolutions){
       existingSolutions.push(tempSol);
       window.localStorage.setItem("solutions",JSON.stringify(existingSolutions));
     }else{
-      window.localStorage.setItem("solutions",JSON.stringify(tempSol));
+      window.localStorage.setItem("solutions",JSON.stringify([tempSol]));
     }
 }
 
@@ -59,6 +66,7 @@ function updateSolutions(ope,exp,res){
 let tb = document.getElementById("tableBody");
 
 var i = 0;
+console.log(existingSolutions);
 const tContent = existingSolutions.map((e,index) => `
     <tr>
       <td>${index+1}</td>
